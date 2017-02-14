@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+body{
+	font-family: 'Roboto', sans-serif;
+	margin: auto;
+}
+
+
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	text-decoration: none;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+.ba-background{
+	background: url("../asset/bg_t.png"),  linear-gradient(135deg, #683e98 0%,#ab71af 100%) fixed;
+	background-size: cover;
+	text-transform: uppercase;
+}
+.ba-header{
+	margin: 26px auto 0;
+	width: 750px;
+	position: relative;
+}
+#ba-header__logo-nike{
+	padding-left: 4px;
+}
+#ba-header__btn-burger{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.ba-menu{
+	margin-left: 26.66%;
+}
+.ba-menu li{
+	display: inline-block;
+}
+.ba-menu__link{
+	font-size: 12.14px;
+	color: #ffffff;
+	padding: 6px 0;
+	margin: 0 11px;
+	display: inline-block;
+}
+.ba-menu__link:hover,
+.ba-menu__link--selected{
+	border-bottom: 1px solid #ffffff;
+}
+
+
+.ba-product-container{
+	margin-top: 60px;
+	position: relative;
+}
+.ba-card{
+	width: 750px;
+	height: 428px;
+	background-color: white;
+	margin: auto;
+}
+.ba-card:not(:first-of-type){
+	opacity: 0.5;
+	box-shadow: 0 0 50px rgba(208, 201, 211, 0.25);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+.ba-card:first-of-type{
+	background: linear-gradient(to bottom, #edeaec 0%,#f4f4f4 25%);
+	position: relative;
+	z-index: 3;
+	opacity: 1;
+}
+.ba-card:nth-of-type(2){
+	width: 778px;
+	height: 408px;
+	z-index: 2;
+}
+.ba-card:nth-of-type(3){
+	width: 804px;
+	height: 390px;
+	z-index: 1;
+}
+
+.ba-card__product{
+	background: url("../asset/bg_product.png") no-repeat;
+	background-position-y: 64px ;
+	background-position-x: 12px ;
+	width: 502px;
+	height: 428px;
+	float: left;
+	position: relative;
+}
+#ba-present-product{
+	width: 415px;
+	height: 239px;
+	overflow: hidden;
+	margin-top: 95px;
+	margin-left: 40px;
+	position: relative;
+}
+#ba-present-product img{
+	position: absolute;
+	bottom: 0;
+}
+.ba-card_button{
+	display: block;
+	position: absolute;
+	z-index: 6;
+	cursor: pointer;
+}
+.ba-card_button--add{
+	right: 24px;
+	bottom: 72px;
+}
+.ba-card_button--close{
+	right: 11px;
+	top: 11px;
+	height: 15px;
+	transform: rotate(45deg);
+	opacity: 0.2;
+}
+.ba-card_button:hover{
+	transform: scale(1.1);
+}
+.ba-slider{
+	width: 162px;
+	padding: 0;
+	margin: 30px auto;
+	font-size: 0;
+}
+.ba-slider__items{
+	overflow: hidden;
+	display: inline-block;
+	box-sizing: border-box;
+	list-style: none;
+	width: 42px;
+	height: 42px;
+	border: 2px solid #ffffff;
+	float: left;
+}
+.ba-slider__items:not(:last-of-type){
+	margin-right: 18px;
+}
+.ba-slider__items img{
+	width: 44px;
+	height: 44px;
+	object-fit: cover;
+}
+.ba-slider__items:hover{
+	transform: scale(1.1);
+	border: 2px solid #a200b8;
+}
+.ba-card__description{
+	background-color:  #ffffff;
+	width: 248px;
+	height: 428px;
+	float: right;
+	padding: 44px 30px;
+	position: relative;
+}
+.ba-product__tag{
+	font-size: 14px;
+	font-weight: 400;
+	color: #ffffff;
+	background-color: #ffa60d;
+	padding: 6px;
+	width: 42px;
+	margin: 0;
+}
+.ba-product__info{
+	font-size: 23px;
+	margin-top: 12px;
+}
+.ba-product__info--violet{
+	color: #5e4fff;
+}
+.ba-form__title{
+	font-size: 12px;
+	text-transform: capitalize;
+	margin: 0;
+}
+.ba-product__rating{
+	height: 9px;
+	padding: 0;
+	margin-top: 15px;
+	margin-bottom: 25px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.ba-product__rating--stars li{
+	content: url("../asset/rating_star.png");
+	display: inline-block;
+	height: 9px;
+	position: relative;
+	top: -2px;
+}
+.ba-product__rating--stars li:last-of-type{
+	opacity: 0.4;
+}
+.ba-product__prize{
+	font-size: 22px;
+	font-weight: 300;
+}
+.ba-product__prize:before{
+	content: "$";
+	margin-right: 8px;
+}
+.ba-card__form{
+	margin-top: 25px;
+}
+.ba-form__btn{
+	font-size: 12px;
+	border: 1px solid #000000;
+	background-color: transparent;
+	width: 118px;
+	height: 30px;
+	outline: none;
+	margin: 2px 0;
+}
+.ba-form__size{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	font-size: 14.57px;
+	margin-top: 5px;
+	margin-bottom: 32px;
+	padding: 0;
+	position: relative;
+	left: -7px;
+}
+.ba-size{
+	width: 24px;
+	height: 24px;
+	text-align: center;
+    padding-top: 3px;
+}
+.ba-size:hover,
+.ba-size--selected{
+	border: 1px solid #000000;
+}
+.ba-form__btn--selected,
+.ba-form__btn:hover{
+	background-color: #a200b8;
+	color: #ffffff;
+	border-color: #a200b8;
+}
