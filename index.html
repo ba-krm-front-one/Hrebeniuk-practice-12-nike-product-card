@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
 	<meta charset="UTF-8">
 	<title>Nike*</title>
@@ -50,29 +50,34 @@
 				<article>
 					<h3 class="ba-product__tag">new</h3>
 					<h1 class="ba-product__info">
-						THE <apan class="ba-product__info--violet">RUNNING</apan> HAS JUST BEGUN
+						THE <span class="ba-product__info--violet">RUNNING</span> HAS JUST BEGUN
 					</h1>
-					<div class="ba-product__rating">
-						<p class="ba-form__title">Huarache</p>
-						<ul class="ba-product__rating--stars">
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
+					<div class="ba-rating">
+                        <p class="ba-form__title">Huarache</p>
+						<form class="ba-product__rating">
+							<input id="5" type="radio"><label for="5" class="ba-product__rating--stars"></label>
+							<input id="4" type="radio"><label for="4" class="ba-product__rating--stars"></label>
+							<input id="3" type="radio"><label for="3" class="ba-product__rating--stars"></label>
+							<input id="2" type="radio" checked><label for="2" class="ba-product__rating--stars"></label>
+							<input id="1" type="radio"><label for="1" class="ba-product__rating--stars"></label>
+						</form>
 					</div>
 					<h2 class="ba-product__prize">200</h2>
 				</article>
 				<form action="#" class="ba-card__form">
 					<p class="ba-form__title">size</p>
-					<ul class="ba-form__size">
-						<li class="ba-size">7</li>
-						<li class="ba-size">8</li>
-						<li class="ba-size">9</li>
-						<li class="ba-size ba-size--selected">10</li>
-						<li class="ba-size">11</li>
-					</ul>
+					<div class="ba-form__size">
+						<input class="ba-size--checked" type="radio" id="7" name="size" value="7" >
+						<label class="ba-size" for="7">7</label>
+						<input class="ba-size--checked" type="radio" id="8" name="size" value="8" >
+						<label class="ba-size" for="8">8</label>
+						<input class="ba-size--checked" type="radio" id="9" name="size" value="9" >
+						<label class="ba-size" for="9">9</label>
+						<input class="ba-size--checked" type="radio" id="10" name="size" value="10" checked>
+						<label class="ba-size" for="10">10</label>
+						<input class="ba-size--checked" type="radio" id="11" name="size" value="11" >
+						<label class="ba-size" for="11">11</label>
+					</div>
 					<button class="ba-form__btn ba-form__btn--selected">ADD TO CART</button>
 					<button class="ba-form__btn">WISHLIST</button>
 				</form>
